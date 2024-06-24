@@ -1,0 +1,122 @@
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    background-color: #61606060;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+main {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-stripes {
+  position: absolute;
+  width: 100%;
+  height: 190%;
+  background: linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.1) 75%),
+              linear-gradient(-45deg, transparent 75%, rgba(0, 174, 255, 0.5) 75%);
+  background-size: 40px 40px;
+    z-index: -1;
+}
+
+.owner-panel {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.owner-panel h1 {
+    margin-bottom: 20px;
+}
+
+.owner-panel p {
+    margin-bottom: 20px;
+}
+
+.owner-users-table,
+.owner-messages-table,
+.owner-highscores-table,
+.owner-register-table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 0.9em; /* Adjust the font size to make the table content smaller */
+}
+
+.owner-users-table th,
+.owner-users-table td,
+.owner-messages-table th,
+.owner-messages-table td,
+.owner-highscores-table th,
+.owner-highscores-table td,
+.owner-register-table th,
+.owner-register-table td {
+    padding: 8px; /* Reduce padding to make the table more compact */
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.owner-users-table th,
+.owner-messages-table th,
+.owner-highscores-table th,
+.owner-register-table th {
+    background-color: rgb(96, 207, 255);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.owner-users-table tr:nth-child(even),
+.owner-messages-table tr:nth-child(even),
+.owner-highscores-table tr:nth-child(even),
+.owner-register-table tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.owner-users-table tr:hover,
+.owner-messages-table tr:hover,
+.owner-highscores-table tr:hover,
+.owner-register-table tr:hover {
+    background-color: #ddd;
+}
+
+.owner-status-form,
+.owner-score-form {
+    margin: 0;
+}
+
+.owner-status-form select,
+.owner-score-form input[type="number"] {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.owner-status-form button,
+.owner-score-form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.owner-status-form button:hover,
+.owner-score-form button:hover {
+    background-color: #0056b3;
+}
